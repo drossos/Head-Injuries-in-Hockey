@@ -7,11 +7,11 @@ var home = $("#home"),
 
 
 home.button().on("click",function (){
-
+    openHome();
 });
 
 cteInfo.button().on("click",function (){
-
+    openCteInfo();
 });
 
 caseStudies.button().on("click",function (){
@@ -22,36 +22,15 @@ sources.button().on("click",function (){
 
 });
     //the different elements to be hidden and show between each screen
-    function openBetMenu() {
-        raceTrack.hide();
-        betMenu.show();
-        bettingNames.show();
-        playerTable.show();
-        clearBettingNamesTable();
-        updateBettingNamesTabs();
-        initCurrentBets();
-        $("#booth-toggle").hide();
-        $("#main-toggle").show();
-        $("#race-toggle").show();
-        $('#refreshTabs').show();
-        $('#intro').hide();
-        $("#create-user").show();
-        $("#betExplination").show();
+    function openCteInfo() {
+        $("#homePg").hide();
+        $("#ctePg").show();
 
     }
 
-    function openMain() {
-        raceTrack.hide();
-        playerTable.show();
-        betMenu.hide();
-        bettingNames.hide();
-        $("#booth-toggle").show();
-        $("#main-toggle").hide();
-        $("#race-toggle").show();
-         $('#intro').show();
-         $('#refreshTabs').hide();
-         $("#create-user").show();
-         $("#betExplination").hide();
+    function openHome() {
+         $("#homePg").show();
+        $("#ctePg").hide();
 
     }
 
