@@ -8,7 +8,7 @@ var home = $("#home"),
     ctePage = $("#ctePg"),
     caseStudiesPage = $("#caseStudiesPg"),
     learnMorePage = $("#learnMorePg"),
-    sourcesPage = $("#sorucesPg");
+    sourcesPage = $("#sourcesPg");
     
 
 openHome();
