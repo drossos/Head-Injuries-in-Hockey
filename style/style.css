@@ -1,46 +1,39 @@
-#canvas {
-     background: #F1FAEE; 
-     display: block; 
-     margin: 0 auto;
-     margin-top: 20px;
-     margin-bottom: 20px;
+#tabsBar{
+    position: fixed;
+    top: 0px;
+    right: 10%;
+    left: 10%;
+   
+    background: #D0CDD7;
 
 }
 
 
-
 body {
-   
+   font-family: 'roboto-light';
     background: #696D7D;
 
 }
 
 #content {
     background: #D0CDD7;
-    margin-right: 150px;
-    margin-left: 150px;
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    top: 0;
+    /*margin-right: 150px;
+    margin-left: 150px;*/
     padding-right: 150px;
     padding-left: 150px;
     padding-bottom: 100px;
-    padding-top: 40px;
-    line-height: 200%;
+    padding-top: 150px;
+   /* line-height: 200%;*/
 }
 
-pre{
-    background-color: #fefefc;
-    color: #585858;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-    font-size: 14px;
-    padding: 1.8em 6px 1.8em 16px;
-    margin-bottom: 1.5em;
-    display: block;
-    overflow: auto;
-    overflow-y: auto;
-    border: 1px solid #e2e2da;
-    border-radius: 5px;
-    line-height: 1.5em;
+@font-face {
+    font-family: 'roboto-light'; 
+    src: url("Roboto-Light.ttf"); 
 }
-
 
 #aplic{
     padding-right: 200px;
@@ -48,4 +41,10 @@ pre{
 
 #secret{
     font-size: 8px;
+}
+
+.images{
+    float: right;
+    clear: right;
+    padding-left: 20px;
 }

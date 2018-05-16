@@ -2,10 +2,17 @@ $(window).load(function() {
 var home = $("#home"),
     cteInfo = $("#cteInfo"),
     caseStudies = $("#caseStudies"),
-    sources = $("#sources");
+    sources = $("#sources"),
+    learnMore = $("#learnMore"),
+    homePage =  $("#homePg"),
+    ctePage = $("#ctePg"),
+    caseStudiesPage = $("#caseStudiesPg"),
+    learnMorePage = $("#learnMorePg"),
+    sourcesPage = $("#sorucesPg");
+    
 
-
-
+openHome();
+learnMore.hide();
 home.button().on("click",function (){
     openHome();
 });
@@ -15,24 +22,50 @@ cteInfo.button().on("click",function (){
 });
 
 caseStudies.button().on("click",function (){
-
+    openCaseStudies();
 });
 
 sources.button().on("click",function (){
+    openSourcesPage();
+});
+
+learnMore.button().on("click", function(){
 
 });
     //the different elements to be hidden and show between each screen
     function openCteInfo() {
-        $("#homePg").hide();
-        $("#ctePg").show();
+       homePage.hide();
+       ctePage.show();
+       caseStudiesPage.hide();
+       sourcesPage.hide();
 
     }
 
     function openHome() {
-         $("#homePg").show();
-        $("#ctePg").hide();
+        homePage.show();
+        ctePage.hide();
+        caseStudiesPage.hide();
+        sourcesPage.hide();
 
     }
+
+    function openCaseStudies() {
+        homePage.hide();
+        ctePage.hide();
+        caseStudiesPage.show();
+        sourcesPage.hide();
+
+    }
+
+     function openSourcesPage() {
+        homePage.hide();
+        ctePage.hide();
+        caseStudiesPage.hide();
+        sourcesPage.show();
+
+    }
+
+    
 
     function openRace() {
         raceTrack.show();
