@@ -8,6 +8,10 @@
 
 }
 
+#title{
+    font-size: 50px;
+}
+
 
 body {
    font-family: 'roboto-light';
@@ -27,6 +31,7 @@ body {
     padding-left: 150px;
     padding-bottom: 100px;
     padding-top: 150px;
+    line-height: 200%;
    /* line-height: 200%;*/
 }
 
